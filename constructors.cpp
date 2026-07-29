@@ -25,8 +25,20 @@ int main(){
     S3.name="Arnav Bansal";
     S3.roll=29;
     S3.gpa=6.69;
+// copy constructors 
+//method1:- 
+    Student S4=S1; //copied and it is a deep copy.
+    // deep copy ->> only s4 will change no changes to s1.
+    //example:-
+    S4.name="Prateek";
+//method 2:-
+    Student S5(S1);
+    S5.name="Shyam Garg"; // so again its a deep copy
 
     print(S1);
     print(S2);
-    print(S3)
+    print(S3);
+    print(S4);
+    print(S5);
+
 }
